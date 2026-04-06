@@ -926,17 +926,27 @@
     const lbUrlEl  = document.getElementById('lb-url');
     const lbTab    = document.getElementById('lb-tab');
 
+    // iOS Safari ignores overflow:hidden on body — use position:fixed trick instead
+    var _scrollY = 0;
     window.openLightbox = function(url) {
-      lbIframe.src   = url;
+      lbIframe.src        = url;
       lbUrlEl.textContent = url;
-      lbTab.href     = url;
+      lbTab.href          = url;
       lb.classList.add('lb--open');
+      _scrollY = window.scrollY;
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top      = '-' + _scrollY + 'px';
+      document.body.style.width    = '100%';
     };
     window.closeLightbox = function() {
       lb.classList.remove('lb--open');
       lbIframe.src = '';
       document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top      = '';
+      document.body.style.width    = '';
+      window.scrollTo(0, _scrollY);
     };
     document.getElementById('lb-close').addEventListener('click', window.closeLightbox);
     document.getElementById('lb-bd').addEventListener('click', window.closeLightbox);
