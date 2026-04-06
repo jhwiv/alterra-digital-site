@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterra Digital — Digital Travel Companions for Luxury Advisors</title>
+  <meta name="description" content="We transform luxury travel itineraries into stunning digital companions your clients will actually use. Day-by-day guides with live weather, 360° Street Views, offline capability, and your agency's branding.">
+  <meta property="og:title" content="Alterra Digital — Digital Travel Companions">
+  <meta property="og:description" content="Your trip. Their phone. A living guide. From $495 per itinerary.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <!-- Logo -->
+        <a href="#" class="nav__logo" aria-label="Alterra Digital home">
+          <svg class="nav__logo-svg" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M19 2L35.5 31H2.5L19 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M11 21L19 8L27 21" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.5"/>
+            <line x1="9" y1="24" x2="29" y2="24" stroke="currentColor" stroke-width="1.4" opacity="0.35"/>
+          </svg>
+          <span class="nav__logo-text">Alterra Digital</span>
+        </a>
+
+        <!-- Nav Links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#examples">Live Examples</a></li>
+          <li><a href="#private-label">White Label</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+
+        <!-- CTA -->
+        <a href="#contact" class="nav__cta">Request a Pilot Build</a>
+        <button class="nav__toggle" aria-label="Open menu" id="nav-toggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════
+       HERO
+  ═══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Text -->
+        <div class="hero__text">
+          <div class="eyebrow hero__eyebrow">Bespoke Digital Travel Companions</div>
+          <h1 class="hero__headline">
+            Your trip.<br>Their phone.<br><em>A living guide.</em>
+          </h1>
+          <p class="hero__sub">
+            We turn luxury travel itineraries into stunning digital companions — the kind your clients open 23 times during the trip and show their friends when they're back.
+          </p>
+          <div class="hero__ctas">
+            <a href="#examples" class="btn btn--gold">
+              See Live Examples
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--white-outline">Request a Pilot Build</a>
+          </div>
+          <div class="hero__trust">
+            <span class="hero__trust-item">From $495 per itinerary</span>
+            <span class="hero__trust-item">No app store required</span>
+            <span class="hero__trust-item">Done-for-you production</span>
+          </div>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone-wrap">
+            <!-- Back phone -->
+            <div class="phone-wrap--back">
+              <div class="phone" style="border-radius:38px;">
+                <div class="phone__inner">
+                  <div class="app-bar">
+                    <div class="app-bar__brand">Newfoundland &amp; Nova Scotia</div>
+                    <div class="app-bar__sub">Maritimes Grand Loop</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Front phone -->
+            <div class="phone">
+              <div class="phone__inner">
+                <!-- App header -->
+                <div class="app-bar">
+                  <div class="app-bar__brand">Martha Good</div>
+                  <div class="app-bar__sub">Luxury Travel</div>
+                </div>
+                <!-- Tabs -->
+                <div class="app-tabs-row">
+                  <span class="app-tab app-tab--on">Overview</span>
+                  <span class="app-tab">Friday</span>
+                  <span class="app-tab">Saturday</span>
+                  <span class="app-tab">Sunday</span>
+                </div>
+                <!-- App body -->
+                <div class="app-body">
+                  <div class="app-day-banner">
+                    <span class="app-day-num">Day 1</span>
+                    <span class="app-day-date">Friday · 27 March</span>
+                  </div>
+                  <div class="app-city">Zürich</div>
+                  <div class="app-dates-small">27 — 29 March 2026</div>
+                  <!-- Weather card -->
+                  <div class="app-wx">
+                    <div class="app-wx__temp">45°</div>
+                    <div class="app-wx__info">
+                      <strong>Light snow · Hi 46°F</strong>
+                      Bring layers — warm up by evening
+                    </div>
+                  </div>
+                  <!-- Activity cards -->
+                  <div class="app-stop">
+                    <div class="app-stop__time">2:00 PM</div>
+                    <div class="app-stop__name">Kunsthaus Zürich 🔊</div>
+                    <div class="app-stop__badges">
+                      <span class="app-badge">🎫 Zürich Card ✓</span>
+                      <span class="app-badge">⏱ 90 MIN</span>
+                    </div>
+                  </div>
+                  <div class="app-stop">
+                    <div class="app-stop__time">7:30 PM</div>
+                    <div class="app-stop__name">✓ Zeughauskeller</div>
+                    <div class="app-stop__badges">
+                      <span class="app-badge app-badge--confirmed">CONFIRMED · 4 GUESTS</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Floating buttons -->
+                <div class="app-fabs">
+                  <span class="app-fab">🔍 Local</span>
+                  <span class="app-fab">💬 Concierge</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       THE PROBLEM
+  ═══════════════════════════════════ -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="problem__grid">
+
+        <!-- Photo -->
+        <div class="problem__photo reveal">
+          <img src="assets/pdf-vs-digital.png" alt="A crumpled PDF itinerary beside two phones running a polished digital travel companion app" loading="lazy">
+        </div>
+
+        <!-- Content -->
+        <div class="problem__content">
+          <div class="eyebrow reveal">The Gap</div>
+          <h2 class="sec-title reveal" style="font-size: var(--2xl);">The planning was excellent. The delivery didn't match.</h2>
+          <div class="problem__quote reveal reveal-d1">
+            <p>A couple spends $35,000 on a two-week trip. The advisor spends 40 hours planning every detail. Then they deliver all of that work as a PDF attached to an email. The client prints it, loses it, can't find the restaurant phone number at 8 PM in Zürich, mispronounces the reservation name, doesn't know it's about to rain, and calls the advisor three times during dinner.</p>
+          </div>
+          <div class="compare-cards reveal reveal-d2">
+            <div class="compare-card compare-card--bad">
+              <div class="compare-card__label">
+                <svg class="cmp-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                The PDF Experience
+              </div>
+              <ul class="compare-list" role="list">
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Static — no live weather or real-time updates</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Printed and lost, or buried in an email thread</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>No way to find the nearest pharmacy at midnight</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Clients call the advisor with questions that are already answered</li>
+              </ul>
+            </div>
+            <div class="compare-card compare-card--good">
+              <div class="compare-card__label">
+                <svg class="cmp-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                The Digital Companion
+              </div>
+              <ul class="compare-list" role="list">
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Live weather with hourly narratives written in plain English</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One link. Adds to home screen like a native app — no download</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Location-aware search finds what clients need from wherever they stand</li>
+                <li><svg class="cmp-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#27ae60" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Fewer "what now?" calls. More referrals. Higher perceived value.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features__hd reveal">
+        <div class="eyebrow" style="justify-content:center;">Inside Every Companion</div>
+        <h2 class="sec-title sec-title--light" style="font-size:var(--2xl);">Twelve features your clients will actually use</h2>
+        <p class="sec-sub sec-sub--light" style="margin:0 auto; text-align:center;">Every companion is built by hand, not generated by a template. Each feature below appears in both live demos — audited, tested, and polished before your client opens the link.</p>
+      </div>
+
+      <div class="features__grid">
+
+        <!-- 1 -->
+        <div class="feat reveal">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="15" x2="8" y2="15" stroke-width="2.5" stroke-linecap="round"/><line x1="12" y1="15" x2="16" y2="15" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="feat__title">Day-by-Day Itinerary</h3>
+          <p class="feat__desc">Time-stamped cards for every stop, reservation, and transit connection. Confirmed reservations clearly marked with guest counts and booking details. Contextual notes and insider tips throughout.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="feat reveal reveal-d1">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3 class="feat__title">Live Weather Forecasts</h3>
+          <p class="feat__desc">Hourly narrative forecasts written in plain English: "Bring layers for the mountain morning. Rain chance after 3 PM." Expands to a full phone-frame weather modal with contextual packing advice.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="feat reveal reveal-d2">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="feat__title">360° Street Views</h3>
+          <p class="feat__desc">Fully interactive, navigable Google Street View for every hotel, restaurant, and landmark. Your clients virtually walk the streets, find the entrance, and see the neighborhood before they arrive.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="feat reveal reveal-d3">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          </div>
+          <h3 class="feat__title">Pronunciation Guide</h3>
+          <p class="feat__desc">One tap on any foreign place name or phrase plays perfect audio using the device's built-in speech engine. Works offline. Your clients walk into a Zürich café and confidently say "Grüezi" instead of fumbling.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="feat reveal">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><circle cx="11" cy="11" r="3"/></svg>
+          </div>
+          <h3 class="feat__title">Location-Aware Search</h3>
+          <p class="feat__desc">One tap finds the nearest coffee shop, pharmacy, ATM, or restaurant from wherever your client is standing. Quick-tap presets for ten common travel needs. No app-switching, no copying addresses.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="feat reveal reveal-d1">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="9" cy="10" r="1" fill="currentColor"/><circle cx="12" cy="10" r="1" fill="currentColor"/><circle cx="15" cy="10" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feat__title">AI Trip Concierge</h3>
+          <p class="feat__desc">A built-in AI chat tied directly to the itinerary. "What's for dinner tonight?" "Nearest hospital?" "Today's drive?" Quick-action prompts surface the most common questions instantly, no typing required.</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="feat reveal reveal-d2">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5" stroke-linecap="round"/><path d="M9 7h6M9 11h4"/></svg>
+          </div>
+          <h3 class="feat__title">Offline-Ready PWA</h3>
+          <p class="feat__desc">Clients add it to their home screen with a single tap — it opens full-screen, no browser chrome. The full itinerary, reservations, directions, and pronunciation guide work without cell service. Live content refreshes online.</p>
+        </div>
+
+        <!-- 8 -->
+        <div class="feat reveal reveal-d3">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.1 11.91 19.79 19.79 0 0 1 1 3.28 2 2 0 0 1 2.95 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+          </div>
+          <h3 class="feat__title">Flight &amp; Departure Alerts</h3>
+          <p class="feat__desc">Timely reminders that surface exactly when needed — not clutter until then. "Leave hotel by 6:00 PM · Uber 15 min to ZRH" pinned at the top of the relevant day, in red when time is critical.</p>
+        </div>
+
+        <!-- 9 -->
+        <div class="feat reveal">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+          </div>
+          <h3 class="feat__title">Interactive Route Map</h3>
+          <p class="feat__desc">Full-screen Leaflet map with every stop plotted and color-coded by day. Overnight stops in navy, waypoints in gold. Driving routes as solid lines, ferry crossings as dashed. Filter by day to zoom to each destination.</p>
+        </div>
+
+        <!-- 10 -->
+        <div class="feat reveal reveal-d1">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="feat__title">Multi-Timezone Clock</h3>
+          <p class="feat__desc">A persistent floating clock showing home time and local time simultaneously — essential for multi-country road trips and international flights. Keeps clients and advisors aligned without mental arithmetic.</p>
+        </div>
+
+        <!-- 11 -->
+        <div class="feat reveal reveal-d2">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="feat__title">Emergency &amp; Essentials</h3>
+          <p class="feat__desc">Emergency numbers formatted for the destination country, embassy contacts, nearest hospital, disruption playbook (rail strikes, weather alternates), and a curated survival guide — always one tap away, even offline.</p>
+        </div>
+
+        <!-- 12 -->
+        <div class="feat reveal reveal-d3">
+          <div class="feat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="feat__title">White-Label Branding</h3>
+          <p class="feat__desc">Your agency logo, color palette, fonts, and style guide applied to every companion. Clients see your brand, not ours. Delivered as a unique URL — shareable, bookmarkable, and always up to date.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       LIVE EXAMPLES
+  ═══════════════════════════════════ -->
+  <section class="examples" id="examples">
+    <div class="container">
+      <div class="examples__hd reveal">
+        <div class="eyebrow">Live Examples</div>
+        <h2 class="sec-title" style="font-size:var(--2xl);">See it on your phone</h2>
+        <p class="sec-sub">Both examples are real, fully functional companion builds. Open them on your phone to experience exactly what your clients receive — no demo mode, no watermarks.</p>
+      </div>
+
+      <div class="examples__grid">
+
+        <!-- Zurich Weekend -->
+        <div class="ex-card reveal">
+          <div class="ex-card__screen">
+            <div class="ex-phone">
+              <div class="zh-header">
+                <div class="zh-brand">Martha Good</div>
+                <div class="zh-sub">Luxury Travel</div>
+              </div>
+              <div class="zh-tabs">
+                <span class="zh-tab zh-tab--on">Overview</span>
+                <span class="zh-tab">Friday</span>
+                <span class="zh-tab">Saturday</span>
+                <span class="zh-tab">Sunday</span>
+              </div>
+              <div class="zh-body">
+                <div class="zh-city">Zürich</div>
+                <div class="zh-dates">27 — 29 March 2026</div>
+                <div class="zh-wx">
+                  <div class="zh-wx__temp">43°</div>
+                  <div class="zh-wx__info">Snow showers · Hi 45°F<br>Bring layers for evening</div>
+                </div>
+                <div class="zh-stop">
+                  <div class="zh-stop__time">2:00 PM</div>
+                  <div class="zh-stop__name">Kunsthaus Zürich 🔊</div>
+                  <span class="zh-stop__tag">🎫 Zürich Card ✓</span>
+                </div>
+                <div class="zh-stop">
+                  <div class="zh-stop__time">7:30 PM</div>
+                  <div class="zh-stop__name">✓ Zeughauskeller</div>
+                  <span class="zh-stop__tag">CONFIRMED · 4 guests</span>
+                </div>
+                <div class="zh-stop">
+                  <div class="zh-stop__time">10:30 AM</div>
+                  <div class="zh-stop__name">Uetliberg Summit 🔊</div>
+                  <span class="zh-stop__tag">⛰️ 40 MIN BY TRAIN</span>
+                </div>
+                <div class="zh-fabs">
+                  <span class="zh-fab">🔍 Local</span>
+                  <span class="zh-fab">💬 Chat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ex-card__info">
+            <span class="ex-card__tag">3-Day City Break</span>
+            <h3 class="ex-card__title">Zürich Weekend</h3>
+            <p class="ex-card__desc">A father-daughter city break to Zürich via Copenhagen. 19 curated stops, 15 embedded Street View panoramas, a 32-phrase Swiss German pronunciation guide, restaurant reservations, tram routes, and a floating search card with 10 preloaded categories.</p>
+            <div class="pill-row">
+              <span class="pill">🗺 15 Street Views</span>
+              <span class="pill">🔊 32 Phrases</span>
+              <span class="pill">🌤 Live Weather</span>
+              <span class="pill">📡 Offline-Ready</span>
+              <span class="pill">✈️ Air &amp; Hotel Tab</span>
+              <span class="pill">🗓 Schengen/EES Guide</span>
+            </div>
+            <a href="https://www.zurich-weekend.com" target="_blank" rel="noopener" class="ex-card__cta">
+              Open Live Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Maritimes Grand Loop -->
+        <div class="ex-card reveal reveal-d2">
+          <div class="ex-card__screen" style="background: var(--navy);">
+            <div class="ex-phone ex-phone--dark">
+              <div class="mt-header">
+                <div class="mt-title">A 12-Day Road Trip</div>
+                <div class="mt-trip">Newfoundland &amp; Nova Scotia</div>
+                <div class="mt-days">Portland → Fogo Island → Home</div>
+              </div>
+              <div class="mt-tabs">
+                <span class="mt-tab mt-tab--on">Home</span>
+                <span class="mt-tab">Digby</span>
+                <span class="mt-tab">Ferry</span>
+                <span class="mt-tab">Fogo</span>
+              </div>
+              <div class="mt-body">
+                <div class="mt-tz">
+                  <div class="mt-tz__label">Current Time</div>
+                  <div class="mt-tz__row">
+                    <div class="mt-tz__item"><div class="mt-tz__time">9:45</div><div class="mt-tz__zone">Portland 🇺🇸</div></div>
+                    <div class="mt-tz__item"><div class="mt-tz__time">12:45</div><div class="mt-tz__zone">Eastern 🇨🇦</div></div>
+                    <div class="mt-tz__item"><div class="mt-tz__time">1:45</div><div class="mt-tz__zone">Atlantic</div></div>
+                  </div>
+                </div>
+                <div class="mt-day-hd">
+                  <div class="mt-day-label">Day 2 · Nova Scotia</div>
+                  <div class="mt-day-date">Saturday · 28 June</div>
+                </div>
+                <div class="mt-wx">
+                  <div class="mt-wx__temp">62°</div>
+                  <div class="mt-wx__info">Partly cloudy · Hi 66°F<br>Clear afternoon on the Bay</div>
+                </div>
+                <div class="mt-stop">
+                  <div class="mt-stop__time">9:00 AM</div>
+                  <div class="mt-stop__name">Drive to Lunenburg 🔊</div>
+                  <span class="mt-stop__tag">🚗 94 km · 1.5 hrs</span>
+                </div>
+                <div class="mt-stop">
+                  <div class="mt-stop__time">2:15 PM</div>
+                  <div class="mt-stop__name">⛴ Ferry — Bay of Fundy</div>
+                  <span class="mt-stop__tag">CABIN REQ. · CHECK IN 1 HR EARLY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ex-card__info">
+            <span class="ex-card__tag">12-Day Road Trip</span>
+            <h3 class="ex-card__title">Maritimes Grand Loop</h3>
+            <p class="ex-card__desc">Portland, Maine to Newfoundland and back through Nova Scotia and New Brunswick. Ferry crossings with overnight cabins, border crossing guides, a triple-timezone clock, live webcams, and the full AI concierge feature.</p>
+            <div class="pill-row">
+              <span class="pill">⛴ 4 Ferry Crossings</span>
+              <span class="pill">🌐 Live Webcams</span>
+              <span class="pill">🕐 3 Time Zones</span>
+              <span class="pill">🔊 Maritime Phrases</span>
+              <span class="pill">📋 History Section</span>
+              <span class="pill">🗺 Full Route Map</span>
+            </div>
+            <a href="https://www.maritimesgrandloop.com" target="_blank" rel="noopener" class="ex-card__cta">
+              Open Live Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       PRIVATE LABEL
+  ═══════════════════════════════════ -->
+  <section class="privlabel" id="private-label">
+    <div class="container">
+      <div class="privlabel__inner">
+
+        <!-- Text -->
+        <div>
+          <div class="eyebrow reveal">White-Label Branding</div>
+          <h2 class="sec-title sec-title--light reveal" style="font-size:var(--2xl);">Your brand.<br>Your client's experience.</h2>
+          <p class="sec-sub sec-sub--light reveal reveal-d1" style="max-width:46ch;">From Premium tier and above, every companion is built to your agency's exact brand identity. Clients see your name, your logo, and your aesthetic — not ours. The Alterra credit is subtle and optional.</p>
+          <ul class="privlabel__feats" role="list">
+            <li class="privlabel__feat reveal reveal-d1">
+              <div class="privlabel__feat-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div><strong>Agency Logo &amp; Identity</strong>Your logo appears in the app header, on the home screen icon, and in the PWA splash screen — so it feels like your product, not a third-party tool.</div>
+            </li>
+            <li class="privlabel__feat reveal reveal-d2">
+              <div class="privlabel__feat-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="13.5" cy="6.5" r="3.5"/><circle cx="7" cy="14.5" r="3.5"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
+              </div>
+              <div><strong>Custom Color Palette</strong>Navigation bars, active tab highlights, button colors, and accent elements are all matched to your brand guidelines. We request a simple style guide and handle the rest.</div>
+            </li>
+            <li class="privlabel__feat reveal reveal-d3">
+              <div class="privlabel__feat-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+              </div>
+              <div><strong>Typography &amp; Web Style</strong>Your chosen fonts — or a curated pairing that matches your website's personality. Editorial serif, clean sans-serif, or a mix — the typography adapts to your brand, not ours.</div>
+            </li>
+            <li class="privlabel__feat reveal reveal-d4">
+              <div class="privlabel__feat-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              </div>
+              <div><strong>Unique Client URL</strong>Each companion lives at a unique, shareable link. For agency partners, we configure a custom domain or subdomain so the URL reflects your brand — not alterra.digital.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Martha Good mockup -->
+        <div class="reveal reveal-d2">
+          <div class="brand-mockup">
+            <div class="bm-hd">
+              <img class="bm-logo-img" src="assets/martha-good-logo.png" alt="Martha Good Luxury Travel logo" loading="lazy">
+            </div>
+            <div class="bm-tabs">
+              <span class="bm-tab bm-tab--on">Overview</span>
+              <span class="bm-tab">Friday</span>
+              <span class="bm-tab">Saturday</span>
+              <span class="bm-tab">Essentials</span>
+              <span class="bm-tab">Street Views</span>
+            </div>
+            <div class="bm-body">
+              <div class="bm-city">Zürich</div>
+              <div class="bm-dates">27 — 29 March 2026</div>
+              <div class="bm-cta-row">
+                <span class="bm-cta-btn">🗺 Explore Itinerary</span>
+                <span class="bm-badge">+ 3 Days Until Departure</span>
+              </div>
+              <div class="bm-wx-row">
+                <div class="bm-wx-card">
+                  <div class="bm-wx-day">FRI 27</div>
+                  <div class="bm-wx-temp">43°</div>
+                  <div class="bm-wx-cond">Snow</div>
+                </div>
+                <div class="bm-wx-card">
+                  <div class="bm-wx-day">SAT 28</div>
+                  <div class="bm-wx-temp">49°</div>
+                  <div class="bm-wx-cond">Overcast</div>
+                </div>
+                <div class="bm-wx-card">
+                  <div class="bm-wx-day">SUN 29</div>
+                  <div class="bm-wx-temp">42°</div>
+                  <div class="bm-wx-cond">Light rain</div>
+                </div>
+              </div>
+            </div>
+            <div class="bm-footer">powered by <em>Alterra</em> digital</div>
+          </div>
+          <p style="text-align:center; margin-top: 1.25rem; font-size: var(--xs); color: rgba(255,255,255,0.35); letter-spacing:0.08em;">Martha Good Luxury Travel — Virtuoso Top Producer, Naples FL</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       HOW IT WORKS
+  ═══════════════════════════════════ -->
+  <section class="process" id="how-it-works">
+    <div class="container">
+      <div class="process__hd reveal">
+        <div class="eyebrow" style="justify-content:center;">How It Works</div>
+        <h2 class="sec-title" style="font-size:var(--2xl); text-align:center;">You design the trip.<br><em style="font-family:var(--font-d); font-style:italic;">We build the companion.</em></h2>
+        <p class="sec-sub" style="text-align:center; margin:0 auto; max-width:52ch;">The advisor sends trip details. We deliver a finished product your client opens on their phone. You don't learn a platform, build a template, or touch any technology.</p>
+      </div>
+      <div class="process__steps">
+        <div class="process__connector" aria-hidden="true"></div>
+        <div class="process-step reveal">
+          <div class="process-step__num">1</div>
+          <h3 class="process-step__title">Submit Trip Details</h3>
+          <p class="process-step__desc">Complete a structured intake form with your client's destinations, dates, reservations, preferences, and any celebration details. We handle everything from there.</p>
+        </div>
+        <div class="process-step reveal reveal-d2">
+          <div class="process-step__num">2</div>
+          <h3 class="process-step__title">We Build &amp; QA</h3>
+          <p class="process-step__desc">Our team builds the companion by hand — scouting Street View angles, writing weather narratives, mapping pronunciation, and configuring every feature for your destination. Two revision rounds included.</p>
+        </div>
+        <div class="process-step reveal reveal-d4">
+          <div class="process-step__num">3</div>
+          <h3 class="process-step__title">Your Client Opens a Link</h3>
+          <p class="process-step__desc">You receive a unique URL and QR code to share. Your client taps, adds it to their home screen, and has a polished, fully-featured travel guide. No app store. No download. No friction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       PRICING
+  ═══════════════════════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing__hd reveal">
+        <div class="eyebrow" style="justify-content:center;">Pricing</div>
+        <h2 class="sec-title" style="font-size:var(--2xl); text-align:center;">Four tiers. One goal.</h2>
+        <p class="sec-sub" style="text-align:center; margin:0 auto;">The right companion for every engagement — from a four-day city escape to a three-week multi-city journey. Annual agency partnerships available from $4,800/year.</p>
+      </div>
+
+      <div class="pricing__grid reveal">
+
+        <!-- Essentials -->
+        <div class="tier">
+          <div class="tier__name">Essentials</div>
+          <div class="tier__price"><sup>$</sup>495</div>
+          <div class="tier__desc">Short trips up to 4 days. All core features included.</div>
+          <div class="tier__hr"></div>
+          <ul class="tier__features" role="list">
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Up to 4 days covered</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Up to 8 Street Views</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Live weather forecasts</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Pronunciation guide</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Location search</li>
+            <li class="tier__feature tier__feature-off"><span class="tier__chk tier__chk--no"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>White-label branding</li>
+            <li class="tier__feature tier__feature-off"><span class="tier__chk tier__chk--no"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Luxury add-ons</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>30-day post-trip updates</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>5-day turnaround</li>
+          </ul>
+          <a href="#contact" class="tier__cta tier__cta--outline">Get Started</a>
+        </div>
+
+        <!-- Premium (featured) -->
+        <div class="tier tier--feat">
+          <div class="tier__badge">Most Popular</div>
+          <div class="tier__name" style="margin-top: var(--s6);">Premium</div>
+          <div class="tier__price"><sup>$</sup>895</div>
+          <div class="tier__desc" style="color:rgba(255,255,255,0.55);">Trips up to 10 days. Includes white-label branding and select add-ons.</div>
+          <div class="tier__hr"></div>
+          <ul class="tier__features" role="list">
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Up to 10 days covered</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Up to 25 Street Views</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Live weather forecasts</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Pronunciation guide</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Location search + AI concierge</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>White-label branding</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Select luxury add-ons</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>90-day post-trip updates</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--gold"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>3-day turnaround</li>
+          </ul>
+          <a href="#contact" class="tier__cta tier__cta--gold">Get Started</a>
+        </div>
+
+        <!-- Premium Plus -->
+        <div class="tier">
+          <div class="tier__name">Premium Plus</div>
+          <div class="tier__price"><sup>$</sup>1,250<span style="font-size:0.5em; font-family:var(--font-b);">–2,500</span></div>
+          <div class="tier__desc">10–21 day multi-city journeys. The full add-on menu and 24-hr on-trip SLA.</div>
+          <div class="tier__hr"></div>
+          <ul class="tier__features" role="list">
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>10–21 days covered</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Up to 40 Street Views</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Full luxury add-on menu</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Multi-traveler profiles</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>24-hr on-trip update SLA</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>White-label branding</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>6-month post-trip updates</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>3-day turnaround</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>VIP Arrival Card included</li>
+          </ul>
+          <a href="#contact" class="tier__cta tier__cta--outline">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="tier">
+          <div class="tier__name">Enterprise</div>
+          <div class="tier__price" style="font-size:clamp(1.4rem,2vw,2rem); padding-top:var(--s2);">Custom</div>
+          <div class="tier__desc">Annual agency partnerships, unlimited builds, and dedicated support.</div>
+          <div class="tier__hr"></div>
+          <ul class="tier__features" role="list">
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Unlimited days &amp; Street Views</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Full + custom add-ons</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Priority on-trip response</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Brand style guide integration</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Volume pricing</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Throughput SLA</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>12-month post-trip updates</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>Priority production queue</li>
+            <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>DPA for EU-facing trips</li>
+          </ul>
+          <a href="#contact" class="tier__cta tier__cta--outline">Request Pricing</a>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; margin-top: var(--s8); font-size:var(--xs); color: var(--muted);">
+        Early-adopter agency partnerships from <strong>$4,800/year</strong> (includes 8 Premium builds). First 10 partners only.
+        &nbsp;·&nbsp; All tiers include offline capability, PWA install, and two revision rounds.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       LUXURY ADD-ONS (brief)
+  ═══════════════════════════════════ -->
+  <section style="background:var(--white); padding-block: clamp(var(--s12), 6vw, var(--s20));">
+    <div class="container container--narrow">
+      <div style="text-align:center; margin-bottom: var(--s10);" class="reveal">
+        <div class="eyebrow" style="justify-content:center;">Luxury Add-On Menu</div>
+        <h2 class="sec-title" style="font-size:var(--xl);">Bespoke modules for $20,000+ travelers</h2>
+        <p class="sec-sub" style="text-align:center; margin:0 auto;">Available à la carte at Premium tier; bundled at Premium Plus and above.</p>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--s4);" class="reveal">
+        <div style="padding: var(--s5) var(--s6); background:var(--cream); border-radius:var(--r-xl); border:1px solid var(--cream-3);">
+          <div style="font-size:var(--xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-2); margin-bottom:var(--s2);">VIP Arrival Protocol</div>
+          <p style="font-size:var(--sm); color:var(--muted); line-height:1.6;">Driver name, photo, car type, meeting-point Street View, one-tap call, and ETA buffer. Precision for the highest-anxiety moment of any trip.</p>
+        </div>
+        <div style="padding: var(--s5) var(--s6); background:var(--cream); border-radius:var(--r-xl); border:1px solid var(--cream-3);">
+          <div style="font-size:var(--xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-2); margin-bottom:var(--s2);">Dining Intelligence</div>
+          <p style="font-size:var(--sm); color:var(--muted); line-height:1.6;">Dress code, best-table notes, allergy precision, sommelier pre-orders, and reservation confirmation status — all inside the companion.</p>
+        </div>
+        <div style="padding: var(--s5) var(--s6); background:var(--cream); border-radius:var(--r-xl); border:1px solid var(--cream-3);">
+          <div style="font-size:var(--xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-2); margin-bottom:var(--s2);">Celebration Moments</div>
+          <p style="font-size:var(--sm); color:var(--muted); line-height:1.6;">Timed surprises — champagne viewpoints, photographer coordination, private tastings — with logistics hidden from the traveler until reveal.</p>
+        </div>
+        <div style="padding: var(--s5) var(--s6); background:var(--cream); border-radius:var(--r-xl); border:1px solid var(--cream-3);">
+          <div style="font-size:var(--xs); font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-2); margin-bottom:var(--s2);">Disruption Playbook</div>
+          <p style="font-size:var(--sm); color:var(--muted); line-height:1.6;">Rail strike alternates, weather-contingency routing, medical contacts, embassy details, and an emergency contact ladder — built for the worst day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       CTA — REQUEST PILOT
+  ═══════════════════════════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-section__inner">
+        <div class="cta-section__pre">Complimentary Pilot Build</div>
+        <h2 class="cta-section__hl">Your clients deserve more than a PDF.</h2>
+        <p class="cta-section__sub">
+          Request a complimentary pilot build. We'll build one full companion for a real client trip — no obligation — so you can see the reaction before committing. If they love it, you convert. If not, you still learned something valuable.
+        </p>
+        <div class="cta-section__btns">
+          <a href="mailto:hello@alterra.digital?subject=Pilot%20Build%20Request&body=Hello%2C%0A%0AI%20am%20a%20luxury%20travel%20advisor%20interested%20in%20learning%20more%20about%20Alterra%20Digital%20companions.%0A%0AAgency%20name%3A%0AWebsite%3A%0ATrips%20per%20year%20(approx)%3A%0A%0AI%27d%20like%20to%20discuss%20a%20pilot%20build." class="btn btn--gold">
+            Request a Pilot Build
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.zurich-weekend.com" target="_blank" rel="noopener" class="btn btn--white-outline">
+            View Live Demo First
+          </a>
+        </div>
+        <p class="cta-section__note">Or email hello@alterra.digital &nbsp;·&nbsp; Response within one business day</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <svg class="footer__logo-svg" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M19 2L35.5 31H2.5L19 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M11 21L19 8L27 21" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" opacity="0.5"/>
+          </svg>
+          <span class="footer__logo-text">Alterra Digital</span>
+        </div>
+        <p class="footer__tagline">Bespoke digital travel companions for the luxury advisory market</p>
+        <ul class="footer__links" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#examples">Live Examples</a></li>
+          <li><a href="https://www.zurich-weekend.com" target="_blank" rel="noopener">Zürich Demo</a></li>
+          <li><a href="https://www.maritimesgrandloop.com" target="_blank" rel="noopener">Maritimes Demo</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer__copy">&copy; 2026 Alterra Digital, LLC &nbsp;·&nbsp; Delaware &nbsp;·&nbsp; All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════ -->
+  <script>
+  // ── Nav scroll behavior
+  const nav = document.getElementById('nav');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.classList.toggle('nav--scrolled', y > 60);
+    lastY = y;
+  }, { passive: true });
+
+  // ── Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── Mobile nav toggle (simple)
+  const toggle = document.getElementById('nav-toggle');
+  toggle && toggle.addEventListener('click', () => {
+    const links = document.querySelector('.nav__links');
+    if (!links) return;
+    const open = links.style.display === 'flex';
+    links.style.display = open ? '' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '100%';
+    links.style.left = '0';
+    links.style.right = '0';
+    links.style.background = 'rgba(10,16,30,0.97)';
+    links.style.padding = '1.5rem 2rem';
+    links.style.gap = '1.5rem';
+    links.style.zIndex = '100';
+    if (open) links.style.display = '';
+  });
+
+  // ── Smooth anchor scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+  </script>
+
+</body>
+</html>
