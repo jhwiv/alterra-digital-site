@@ -337,55 +337,21 @@
     <div class="container">
       <div class="examples__hd reveal">
         <div class="eyebrow">Live Examples</div>
-        <h2 class="sec-title" style="font-size:var(--2xl);">See it on your phone</h2>
-        <p class="sec-sub">Both examples are real, fully functional companion builds. Open them on your phone to experience exactly what your clients receive — no demo mode, no watermarks.</p>
+        <h2 class="sec-title" style="font-size:var(--2xl);">Two live companion builds</h2>
+        <p class="sec-sub">Click either screenshot to browse the full site in-page, or open on your phone to experience exactly what your clients receive — no demo mode, no watermarks.</p>
       </div>
 
       <div class="examples__grid">
 
         <!-- Zurich Weekend -->
         <div class="ex-card reveal">
-          <div class="ex-card__screen">
-            <div class="ex-phone">
-              <div class="zh-header">
-                <div class="zh-brand">Martha Good</div>
-                <div class="zh-sub">Luxury Travel</div>
-              </div>
-              <div class="zh-tabs">
-                <span class="zh-tab zh-tab--on">Overview</span>
-                <span class="zh-tab">Friday</span>
-                <span class="zh-tab">Saturday</span>
-                <span class="zh-tab">Sunday</span>
-              </div>
-              <div class="zh-body">
-                <div class="zh-city">Zürich</div>
-                <div class="zh-dates">27 — 29 March 2026</div>
-                <div class="zh-wx">
-                  <div class="zh-wx__temp">43°</div>
-                  <div class="zh-wx__info">Snow showers · Hi 45°F<br>Bring layers for evening</div>
-                </div>
-                <div class="zh-stop">
-                  <div class="zh-stop__time">2:00 PM</div>
-                  <div class="zh-stop__name">Kunsthaus Zürich 🔊</div>
-                  <span class="zh-stop__tag">🎫 Zürich Card ✓</span>
-                </div>
-                <div class="zh-stop">
-                  <div class="zh-stop__time">7:30 PM</div>
-                  <div class="zh-stop__name">✓ Zeughauskeller</div>
-                  <span class="zh-stop__tag">CONFIRMED · 4 guests</span>
-                </div>
-                <div class="zh-stop">
-                  <div class="zh-stop__time">10:30 AM</div>
-                  <div class="zh-stop__name">Uetliberg Summit 🔊</div>
-                  <span class="zh-stop__tag">⛰️ 40 MIN BY TRAIN</span>
-                </div>
-                <div class="zh-fabs">
-                  <span class="zh-fab">🔍 Local</span>
-                  <span class="zh-fab">💬 Chat</span>
-                </div>
-              </div>
+          <button class="demo-trigger" data-url="https://www.zurich-weekend.com" aria-label="Preview Zürich Weekend companion site">
+            <img src="assets/demo-zurich.jpg" alt="Zürich Weekend travel companion — live screenshot" loading="lazy">
+            <div class="demo-trigger__hover">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+              Open Live Site
             </div>
-          </div>
+          </button>
           <div class="ex-card__info">
             <span class="ex-card__tag">3-Day City Break</span>
             <h3 class="ex-card__title">Zürich Weekend</h3>
@@ -398,58 +364,22 @@
               <span class="pill">✈️ Air &amp; Hotel Tab</span>
               <span class="pill">🗓 Schengen/EES Guide</span>
             </div>
-            <a href="https://www.zurich-weekend.com" target="_blank" rel="noopener" class="ex-card__cta">
-              Open Live Demo
+            <button class="ex-card__cta" onclick="openLightbox('https://www.zurich-weekend.com')">
+              Open Live Site
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
+            </button>
           </div>
         </div>
 
         <!-- Maritimes Grand Loop -->
         <div class="ex-card reveal reveal-d2">
-          <div class="ex-card__screen" style="background: var(--navy);">
-            <div class="ex-phone ex-phone--dark">
-              <div class="mt-header">
-                <div class="mt-title">A 12-Day Road Trip</div>
-                <div class="mt-trip">Newfoundland &amp; Nova Scotia</div>
-                <div class="mt-days">Portland → Fogo Island → Home</div>
-              </div>
-              <div class="mt-tabs">
-                <span class="mt-tab mt-tab--on">Home</span>
-                <span class="mt-tab">Digby</span>
-                <span class="mt-tab">Ferry</span>
-                <span class="mt-tab">Fogo</span>
-              </div>
-              <div class="mt-body">
-                <div class="mt-tz">
-                  <div class="mt-tz__label">Current Time</div>
-                  <div class="mt-tz__row">
-                    <div class="mt-tz__item"><div class="mt-tz__time">9:45</div><div class="mt-tz__zone">Portland 🇺🇸</div></div>
-                    <div class="mt-tz__item"><div class="mt-tz__time">12:45</div><div class="mt-tz__zone">Eastern 🇨🇦</div></div>
-                    <div class="mt-tz__item"><div class="mt-tz__time">1:45</div><div class="mt-tz__zone">Atlantic</div></div>
-                  </div>
-                </div>
-                <div class="mt-day-hd">
-                  <div class="mt-day-label">Day 2 · Nova Scotia</div>
-                  <div class="mt-day-date">Saturday · 28 June</div>
-                </div>
-                <div class="mt-wx">
-                  <div class="mt-wx__temp">62°</div>
-                  <div class="mt-wx__info">Partly cloudy · Hi 66°F<br>Clear afternoon on the Bay</div>
-                </div>
-                <div class="mt-stop">
-                  <div class="mt-stop__time">9:00 AM</div>
-                  <div class="mt-stop__name">Drive to Lunenburg 🔊</div>
-                  <span class="mt-stop__tag">🚗 94 km · 1.5 hrs</span>
-                </div>
-                <div class="mt-stop">
-                  <div class="mt-stop__time">2:15 PM</div>
-                  <div class="mt-stop__name">⛴ Ferry — Bay of Fundy</div>
-                  <span class="mt-stop__tag">CABIN REQ. · CHECK IN 1 HR EARLY</span>
-                </div>
-              </div>
+          <button class="demo-trigger" data-url="https://www.maritimesgrandloop.com" aria-label="Preview Maritimes Grand Loop companion site">
+            <img src="assets/demo-maritimes.jpg" alt="Maritimes Grand Loop travel companion — live screenshot" loading="lazy">
+            <div class="demo-trigger__hover">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
+              Open Live Site
             </div>
-          </div>
+          </button>
           <div class="ex-card__info">
             <span class="ex-card__tag">12-Day Road Trip</span>
             <h3 class="ex-card__title">Maritimes Grand Loop</h3>
@@ -462,10 +392,10 @@
               <span class="pill">📋 History Section</span>
               <span class="pill">🗺 Full Route Map</span>
             </div>
-            <a href="https://www.maritimesgrandloop.com" target="_blank" rel="noopener" class="ex-card__cta">
-              Open Live Demo
+            <button class="ex-card__cta" onclick="openLightbox('https://www.maritimesgrandloop.com')">
+              Open Live Site
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
+            </button>
           </div>
         </div>
 
@@ -479,85 +409,76 @@
   ═══════════════════════════════════ -->
   <section class="privlabel" id="private-label">
     <div class="container">
-      <div class="privlabel__inner">
 
-        <!-- Text -->
-        <div>
-          <div class="eyebrow reveal">White-Label Branding</div>
-          <h2 class="sec-title sec-title--light reveal" style="font-size:var(--2xl);">Your brand.<br>Your client's experience.</h2>
-          <p class="sec-sub sec-sub--light reveal reveal-d1" style="max-width:46ch;">From Premium tier and above, every companion is built to your agency's exact brand identity. Clients see your name, your logo, and your aesthetic — not ours. The Alterra credit is subtle and optional.</p>
-          <ul class="privlabel__feats" role="list">
-            <li class="privlabel__feat reveal reveal-d1">
-              <div class="privlabel__feat-ico">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-              </div>
-              <div><strong>Agency Logo &amp; Identity</strong>Your logo appears in the app header, on the home screen icon, and in the PWA splash screen — so it feels like your product, not a third-party tool.</div>
-            </li>
-            <li class="privlabel__feat reveal reveal-d2">
-              <div class="privlabel__feat-ico">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="13.5" cy="6.5" r="3.5"/><circle cx="7" cy="14.5" r="3.5"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
-              </div>
-              <div><strong>Custom Color Palette</strong>Navigation bars, active tab highlights, button colors, and accent elements are all matched to your brand guidelines. We request a simple style guide and handle the rest.</div>
-            </li>
-            <li class="privlabel__feat reveal reveal-d3">
-              <div class="privlabel__feat-ico">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
-              </div>
-              <div><strong>Typography &amp; Web Style</strong>Your chosen fonts — or a curated pairing that matches your website's personality. Editorial serif, clean sans-serif, or a mix — the typography adapts to your brand, not ours.</div>
-            </li>
-            <li class="privlabel__feat reveal reveal-d4">
-              <div class="privlabel__feat-ico">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </div>
-              <div><strong>Unique Client URL</strong>Each companion lives at a unique, shareable link. For agency partners, we configure a custom domain or subdomain so the URL reflects your brand — not alterra.digital.</div>
-            </li>
-          </ul>
+      <div class="privlabel__hd reveal">
+        <div class="eyebrow" style="justify-content:center;">White-Label Branding</div>
+        <h2 class="sec-title" style="font-size:var(--2xl); text-align:center;">Your brand on every screen.</h2>
+        <p class="sec-sub" style="max-width:56ch; margin:0 auto; text-align:center;">Available as an upcharge from Premium tier and above. Every companion is rebuilt to your agency's exact brand identity — clients see your name, your logo, and your aesthetic, not ours.</p>
+      </div>
+
+      <div class="privlabel__grid">
+
+        <div class="pl-feat reveal">
+          <div class="pl-feat__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="pl-feat__title">Agency Logo &amp; Identity</h3>
+          <p class="pl-feat__desc">Your logo in the app header, home screen icon, and PWA splash screen. It feels like your product, not a third-party tool.</p>
         </div>
 
-        <!-- Martha Good mockup -->
-        <div class="reveal reveal-d2">
-          <div class="brand-mockup">
-            <div class="bm-hd">
-              <img class="bm-logo-img" src="assets/martha-good-logo.png" alt="Martha Good Luxury Travel logo" loading="lazy">
-            </div>
-            <div class="bm-tabs">
-              <span class="bm-tab bm-tab--on">Overview</span>
-              <span class="bm-tab">Friday</span>
-              <span class="bm-tab">Saturday</span>
-              <span class="bm-tab">Essentials</span>
-              <span class="bm-tab">Street Views</span>
-            </div>
-            <div class="bm-body">
-              <div class="bm-city">Zürich</div>
-              <div class="bm-dates">27 — 29 March 2026</div>
-              <div class="bm-cta-row">
-                <span class="bm-cta-btn">🗺 Explore Itinerary</span>
-                <span class="bm-badge">+ 3 Days Until Departure</span>
-              </div>
-              <div class="bm-wx-row">
-                <div class="bm-wx-card">
-                  <div class="bm-wx-day">FRI 27</div>
-                  <div class="bm-wx-temp">43°</div>
-                  <div class="bm-wx-cond">Snow</div>
-                </div>
-                <div class="bm-wx-card">
-                  <div class="bm-wx-day">SAT 28</div>
-                  <div class="bm-wx-temp">49°</div>
-                  <div class="bm-wx-cond">Overcast</div>
-                </div>
-                <div class="bm-wx-card">
-                  <div class="bm-wx-day">SUN 29</div>
-                  <div class="bm-wx-temp">42°</div>
-                  <div class="bm-wx-cond">Light rain</div>
-                </div>
-              </div>
-            </div>
-            <div class="bm-footer">powered by <em>Alterra</em> digital</div>
+        <div class="pl-feat reveal reveal-d1">
+          <div class="pl-feat__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="13.5" cy="6.5" r="3.5"/><circle cx="7" cy="14.5" r="3.5"/><circle cx="17.5" cy="17.5" r="3.5"/></svg>
           </div>
-          <p style="text-align:center; margin-top: 1.25rem; font-size: var(--xs); color: rgba(255,255,255,0.35); letter-spacing:0.08em;">Martha Good Luxury Travel — Virtuoso Top Producer, Naples FL</p>
+          <h3 class="pl-feat__title">Custom Color Palette</h3>
+          <p class="pl-feat__desc">Navigation bars, tab highlights, buttons, and accents matched to your brand guidelines. Send us your style guide; we handle the rest.</p>
+        </div>
+
+        <div class="pl-feat reveal reveal-d2">
+          <div class="pl-feat__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+          </div>
+          <h3 class="pl-feat__title">Typography &amp; Web Style</h3>
+          <p class="pl-feat__desc">Your chosen fonts or a curated pairing that matches your website. Editorial serif, clean sans-serif, or a mix — it adapts to your brand.</p>
+        </div>
+
+        <div class="pl-feat reveal reveal-d3">
+          <div class="pl-feat__ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3 class="pl-feat__title">Custom Domain</h3>
+          <p class="pl-feat__desc">Annual agency partners can configure a custom subdomain so the URL reflects your brand — not alterra.digital.</p>
         </div>
 
       </div>
+
+      <!-- Upcharge callout -->
+      <div class="pl-upcharge reveal">
+        <div class="pl-upcharge__inner">
+          <div class="pl-upcharge__label">White-Label Add-On Pricing</div>
+          <div class="pl-upcharge__tiers">
+            <div class="pl-upcharge__tier">
+              <div class="pl-upcharge__name">Essentials</div>
+              <div class="pl-upcharge__price">+$150</div>
+              <div class="pl-upcharge__note">per build</div>
+            </div>
+            <div class="pl-upcharge__divider" aria-hidden="true"></div>
+            <div class="pl-upcharge__tier">
+              <div class="pl-upcharge__name">Premium</div>
+              <div class="pl-upcharge__price">Included</div>
+              <div class="pl-upcharge__note">at $895 base</div>
+            </div>
+            <div class="pl-upcharge__divider" aria-hidden="true"></div>
+            <div class="pl-upcharge__tier">
+              <div class="pl-upcharge__name">Annual Partners</div>
+              <div class="pl-upcharge__price">Included</div>
+              <div class="pl-upcharge__note">on all builds</div>
+            </div>
+          </div>
+          <p class="pl-upcharge__foot">The Alterra credit line is always subtle and can be suppressed entirely for annual agency partners.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -784,6 +705,22 @@
   </footer>
 
 
+
+  <!-- ── LIGHTBOX ── -->
+  <div id="lb" class="lb" role="dialog" aria-modal="true" aria-label="Live site preview">
+    <div id="lb-bd" class="lb__bd"></div>
+    <div class="lb__box">
+      <div class="lb__top">
+        <span id="lb-url" class="lb__url"></span>
+        <a id="lb-tab" class="lb__open-tab" href="#" target="_blank" rel="noopener">Open in New Tab ↗</a>
+        <button id="lb-close" class="lb__close" aria-label="Close preview">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <iframe id="lb-iframe" class="lb__iframe" title="Live site preview" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <!-- ═══════════════════════════════════
        JAVASCRIPT
   ═══════════════════════════════════ -->
@@ -836,6 +773,37 @@
       if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+  // ── Lightbox
+  (function() {
+    const lb       = document.getElementById('lb');
+    const lbIframe = document.getElementById('lb-iframe');
+    const lbUrlEl  = document.getElementById('lb-url');
+    const lbTab    = document.getElementById('lb-tab');
+
+    window.openLightbox = function(url) {
+      lbIframe.src   = url;
+      lbUrlEl.textContent = url;
+      lbTab.href     = url;
+      lb.classList.add('lb--open');
+      document.body.style.overflow = 'hidden';
+    };
+    window.closeLightbox = function() {
+      lb.classList.remove('lb--open');
+      lbIframe.src = '';
+      document.body.style.overflow = '';
+    };
+    document.getElementById('lb-close').addEventListener('click', window.closeLightbox);
+    document.getElementById('lb-bd').addEventListener('click', window.closeLightbox);
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') window.closeLightbox();
+    });
+    document.querySelectorAll('.demo-trigger').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        window.openLightbox(btn.dataset.url);
+      });
+    });
+  })();
   </script>
 
 </body>
