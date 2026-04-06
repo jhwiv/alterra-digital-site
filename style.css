@@ -570,8 +570,8 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 .features__hd { text-align: center; margin-bottom: var(--s16); }
 .features__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--s5);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s8);
   background: transparent;
   border: none;
   border-radius: 0;
@@ -715,13 +715,14 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 .pill {
   display: inline-flex;
   align-items: center;
-  gap: var(--s1);
-  padding: 3px var(--s3);
-  background: var(--cream);
-  color: var(--muted);
+  padding: 4px var(--s4);
+  background: transparent;
+  color: var(--navy-4);
   font-size: var(--xs);
+  letter-spacing: 0.07em;
   border-radius: var(--r-full);
-  border: 1px solid var(--cream-3);
+  border: 1px solid rgba(14,24,41,0.18);
+  font-weight: 400;
 }
 .ex-card__cta {
   display: inline-flex;
@@ -1316,10 +1317,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   border-color: rgba(201,162,72,0.2);
 }
 .testi__stars {
-  color: var(--gold);
-  font-size: 0.9rem;
-  letter-spacing: 3px;
-  line-height: 1;
+  display: none;
 }
 .testi__quote {
   font-family: var(--font-d);
@@ -1328,6 +1326,19 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   color: rgba(255,255,255,0.82);
   line-height: 1.7;
   flex: 1;
+  padding-top: var(--s5);
+  position: relative;
+}
+.testi__quote::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
 }
 .testi__author {
   display: flex;
@@ -1519,4 +1530,74 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 @media (max-width: 480px) {
   .testimonials__grid { max-width: 100%; }
   .pilot-form-wrap { padding: var(--s5); border-radius: var(--r-xl); }
+}
+
+/* ── CREDENTIAL STRIP ── */
+.credential-strip {
+  background: var(--navy);
+  padding-block: var(--s10);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.cred-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--s8);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cred-label {
+  font-size: var(--xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.32);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cred-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255,255,255,0.12);
+  flex-shrink: 0;
+}
+.cred-list {
+  display: flex;
+  align-items: center;
+  gap: var(--s8);
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+.cred-list li {
+  font-family: var(--font-d);
+  font-style: italic;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  transition: color var(--ease);
+}
+.cred-list li:hover {
+  color: rgba(255,255,255,0.58);
+}
+@media (max-width: 768px) {
+  .cred-inner { flex-direction: column; gap: var(--s4); }
+  .cred-divider { display: none; }
+  .cred-list { gap: var(--s5); }
+}
+
+/* ── FEAT CARD PADDING INCREASE (3-col breathing room) ── */
+.feat {
+  padding: var(--s8) var(--s8);
+}
+.feat__icon {
+  width: 48px; height: 48px;
+  margin-bottom: var(--s6);
+}
+.feat__icon svg { width: 24px; height: 24px; }
+
+/* ── PILL HOVER ── */
+.pill:hover {
+  border-color: rgba(14,24,41,0.35);
+  color: var(--navy-2);
 }
