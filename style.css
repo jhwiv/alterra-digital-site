@@ -724,6 +724,13 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   border: 1px solid rgba(14,24,41,0.18);
   font-weight: 400;
 }
+.ex-card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  margin-top: auto;
+  flex-wrap: wrap;
+}
 .ex-card__cta {
   display: inline-flex;
   align-items: center;
@@ -736,12 +743,28 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   border-bottom: 2px solid var(--gold);
   padding-bottom: 2px;
   transition: color var(--ease);
-  margin-top: auto;
   align-self: flex-start;
+  white-space: nowrap;
 }
 .ex-card__cta:hover { color: var(--gold-2); }
 .ex-card__cta svg { width: 16px; height: 16px; transition: transform var(--ease); }
 .ex-card__cta:hover svg { transform: translateX(3px); }
+.ex-card__preview {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--xs);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: color var(--ease);
+  white-space: nowrap;
+}
+.ex-card__preview:hover { color: var(--navy-2); }
 
 /* ── PRIVATE LABEL SECTION ── */
 .privlabel { background: var(--cream-2); }
