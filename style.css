@@ -485,7 +485,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   border-radius: 99px;
   letter-spacing: 0.06em;
 }
-.app-badge--confirmed { background: rgba(39,174,96,0.1); color: #27ae60; }
+.app-badge--confirmed { background: var(--gold-bg); color: var(--gold-2); }
 .app-fabs {
   background: #0d1928;
   padding: 8px 12px;
@@ -538,8 +538,8 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   padding: var(--s6) var(--s8);
   border-radius: var(--r-xl);
 }
-.compare-card--bad { background: #fff5f5; border: 1px solid #ffd5d5; }
-.compare-card--good { background: #f0faf5; border: 1px solid #b8e6d0; }
+.compare-card--bad { background: var(--white); border: 1px solid var(--cream-3); }
+.compare-card--good { background: var(--cream); border: 1px solid rgba(201,162,72,0.25); }
 .compare-card__label {
   font-size: var(--xs);
   font-weight: 700;
@@ -550,8 +550,10 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   align-items: center;
   gap: var(--s2);
 }
-.compare-card--bad .compare-card__label { color: #c0392b; }
-.compare-card--good .compare-card__label { color: #27ae60; }
+.compare-card--bad .compare-card__label { color: var(--navy-2); }
+.compare-card--good .compare-card__label { color: var(--gold-2); }
+.compare-card--bad .cmp-icon { stroke: var(--muted); }
+.compare-card--good .cmp-icon { stroke: var(--gold); }
 .compare-list { list-style: none; display: flex; flex-direction: column; gap: var(--s3); }
 .compare-list li {
   display: flex;
@@ -962,7 +964,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   justify-content: center;
   margin-top: 1px;
 }
-.tier__chk--yes { background: rgba(39,174,96,0.1); color: #27ae60; }
+.tier__chk--yes { background: var(--gold-bg); color: var(--gold); }
 .tier__chk--no { background: var(--cream-2); }
 .tier__chk--gold { background: var(--gold-bg2); color: var(--gold); }
 .tier__cta {
@@ -1184,6 +1186,13 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 }
 
 @media (max-width: 768px) {
+  /* Feature cards: clamp descriptions so paired cards match height */
+  .feat__desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   /* ── Hero: kill empty space, full-width CTAs, fix eyebrow ── */
   .hero { min-height: 0; padding-bottom: var(--s12); }
   .hero__inner { grid-template-columns: 1fr; }
