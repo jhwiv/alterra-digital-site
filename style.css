@@ -1362,14 +1362,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 }
 
 /* ── TIER FEATURED (Premium card) ── */
-.tier--feat {
-  background: var(--navy-2);
-}
-.tier--feat .tier__name  { color: rgba(255,255,255,0.55); }
-.tier--feat .tier__price { color: var(--white); }
-.tier--feat .tier__feature { color: rgba(255,255,255,0.88); }
-.tier--feat .tier__feature-off { color: rgba(255,255,255,0.25); }
-.tier--feat .tier__hr    { background: rgba(255,255,255,0.1); }
+/* Intentionally unstyled — matches all other tier cards */
 
 /* ── PILOT FORM (CTA section) ── */
 .pilot-layout {
