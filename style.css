@@ -646,6 +646,15 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .demo-trigger:hover img { transform: scale(1.03); }
+.demo-trigger::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; right: 0;
+  width: 90px;
+  background: linear-gradient(to right, transparent, #ffffff 88%);
+  pointer-events: none;
+  z-index: 1;
+}
 .demo-trigger__hover {
   position: absolute;
   inset: 0;
@@ -657,6 +666,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   gap: var(--s3);
   opacity: 0;
   transition: opacity 0.28s ease;
+  z-index: 2;
   color: var(--white);
   font-size: var(--sm);
   font-weight: 600;
@@ -888,13 +898,18 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   flex-direction: column;
 }
 .tier:last-child { border-right: none; }
-.tier--feat { background: var(--navy); }
-.tier--feat .tier__name { color: rgba(255,255,255,0.55); }
+.tier--feat { background: var(--gold); }
+.tier--feat .tier__name { color: rgba(14,24,41,0.65); }
 .tier--feat .tier__price,
 .tier--feat .tier__desc,
-.tier--feat .tier__feature { color: var(--white); }
-.tier--feat .tier__feature-off { color: rgba(255,255,255,0.25); }
-.tier--feat .tier__hr { background: rgba(255,255,255,0.1); }
+.tier--feat .tier__feature { color: var(--navy); }
+.tier--feat .tier__feature-off { color: rgba(14,24,41,0.3); }
+.tier--feat .tier__hr { background: rgba(14,24,41,0.12); }
+.tier--feat .tier__badge { background: var(--navy); color: var(--white); }
+.tier--feat .tier__chk--yes { background: rgba(14,24,41,0.1); color: var(--navy); }
+.tier--feat .tier__chk--gold { background: rgba(14,24,41,0.1); color: var(--navy); }
+.tier--feat .tier__cta--gold { background: var(--navy); color: var(--white); }
+.tier--feat .tier__cta--gold:hover { background: var(--navy-2); color: var(--white); }
 .tier__badge {
   position: absolute;
   top: 0; left: 50%;
@@ -1146,7 +1161,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   .features__grid { grid-template-columns: repeat(2, 1fr); gap: var(--s4); }
   .pricing__grid { grid-template-columns: repeat(2, 1fr); border-radius: 0; }
   .tier { border-right: none; border-bottom: 1px solid var(--cream-3); }
-  .tier--feat { border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .tier--feat { border-bottom: 1px solid rgba(14,24,41,0.12); }
 }
 
 @media (max-width: 768px) {
