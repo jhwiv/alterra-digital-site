@@ -18,6 +18,15 @@
 </head>
 <body>
 
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+
   <!-- ═══════════════════════════════════
        NAVIGATION
   ═══════════════════════════════════ -->
@@ -193,6 +202,66 @@
     </div>
   </section>
 
+
+
+  <!-- ═══════════════════════════════════
+       SOCIAL PROOF — TESTIMONIALS
+       NOTE: Replace these placeholder quotes with real advisor feedback
+       once you have pilot build results.
+  ═══════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials__hd reveal">
+        <div class="eyebrow testi-eyebrow">What Advisors Are Saying</div>
+        <h2 class="sec-title sec-title--light" style="font-size:var(--xl); text-align:center;">Reactions from the first builds</h2>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testi reveal">
+          <div class="testi__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testi__quote">
+            "We sent the Z&uuml;rich companion on Sunday. She texted before dinner: &lsquo;This is the most beautiful thing I&rsquo;ve ever received from a travel advisor.&rsquo; Two referrals before the trip even started."
+          </blockquote>
+          <div class="testi__author">
+            <div class="testi__avatar" aria-hidden="true">SM</div>
+            <div class="testi__info">
+              <div class="testi__name">Sarah M.</div>
+              <div class="testi__role">Wanderlux Advisors &nbsp;&middot;&nbsp; New York</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi reveal reveal-d2">
+          <div class="testi__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testi__quote">
+            "I tracked our last six builds. Clients averaged 31 opens during each trip. My phone used to ring three times a day while they were abroad. Now it&rsquo;s almost quiet &mdash; they have everything they need."
+          </blockquote>
+          <div class="testi__author">
+            <div class="testi__avatar" aria-hidden="true">JW</div>
+            <div class="testi__info">
+              <div class="testi__name">James W.</div>
+              <div class="testi__role">The White Glove Travel Co. &nbsp;&middot;&nbsp; London</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi reveal reveal-d4">
+          <div class="testi__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="testi__quote">
+            "I submitted the intake form Monday and had a shareable link by Thursday. My client added it to her home screen at the airport. She&rsquo;s now our most vocal referral source."
+          </blockquote>
+          <div class="testi__author">
+            <div class="testi__avatar" aria-hidden="true">DC</div>
+            <div class="testi__info">
+              <div class="testi__name">Diana C.</div>
+              <div class="testi__role">Prestige Journeys &nbsp;&middot;&nbsp; San Francisco</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════
        FEATURES
@@ -561,8 +630,8 @@
         <!-- Premium Plus -->
         <div class="tier">
           <div class="tier__name">Premium Plus</div>
-          <div class="tier__price"><sup>$</sup>1,250<span style="font-size:0.5em; font-family:var(--font-b);">–2,500</span></div>
-          <div class="tier__desc">10–21 day multi-city journeys. The full add-on menu and 24-hr on-trip SLA.</div>
+          <div class="tier__price"><sup>$</sup>1,495</div>
+          <div class="tier__desc">10–14 days from $1,495 &middot; 15–21 days from $2,200. Full add-on menu and 24-hr on-trip SLA.</div>
           <div class="tier__hr"></div>
           <ul class="tier__features" role="list">
             <li class="tier__feature"><span class="tier__chk tier__chk--yes"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></span>10–21 days covered</li>
@@ -601,7 +670,7 @@
       </div>
 
       <p style="text-align:center; margin-top: var(--s8); font-size:var(--xs); color: var(--muted);">
-        Early-adopter agency partnerships from <strong>$4,800/year</strong> (includes 8 Premium builds). First 10 partners only.
+        Early-adopter agency partnerships from <strong>$4,800/year</strong> (includes 8 Premium builds). First 10 partners only. &nbsp;&middot;&nbsp; Premium Plus: $1,495 for 10–14 days, $2,200 for 15–21 days.
         &nbsp;·&nbsp; All tiers include offline capability, PWA install, and two revision rounds.
       </p>
     </div>
@@ -641,26 +710,104 @@
 
 
   <!-- ═══════════════════════════════════
-       CTA — REQUEST PILOT
+       CTA — REQUEST PILOT (inline form)
+       SETUP: Replace FORMSPREE_ENDPOINT in the <script> below with your
+       Formspree form ID from https://formspree.io
   ═══════════════════════════════════ -->
   <section class="cta-section" id="contact">
     <div class="container">
-      <div class="cta-section__inner">
-        <div class="cta-section__pre">Complimentary Pilot Build</div>
-        <h2 class="cta-section__hl">Your clients deserve more than a PDF.</h2>
-        <p class="cta-section__sub">
-          Request a complimentary pilot build. We'll build one full companion for a real client trip — no obligation — so you can see the reaction before committing. If they love it, you convert. If not, you still learned something valuable.
-        </p>
-        <div class="cta-section__btns">
-          <a href="mailto:hello@alterra.digital?subject=Pilot%20Build%20Request&body=Hello%2C%0A%0AI%20am%20a%20luxury%20travel%20advisor%20interested%20in%20learning%20more%20about%20Alterra%20Digital%20companions.%0A%0AAgency%20name%3A%0AWebsite%3A%0ATrips%20per%20year%20(approx)%3A%0A%0AI%27d%20like%20to%20discuss%20a%20pilot%20build." class="btn btn--gold">
-            Request a Pilot Build
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <button onclick="openLightbox('https://www.zurich-weekend.com')" class="btn btn--navy-outline">
-            View Live Demo First
-          </button>
+      <div class="pilot-layout">
+
+        <!-- Left: copy + trust bullets -->
+        <div class="pilot-copy reveal">
+          <div class="cta-section__pre">Complimentary Pilot Build</div>
+          <h2 class="cta-section__hl" style="text-align:left; font-size:var(--2xl);">Your clients deserve<br><em>more than a PDF.</em></h2>
+          <p class="cta-section__sub" style="text-align:left; margin-inline:0; margin-bottom:var(--s8);">
+            We&rsquo;ll build one full companion for a real client trip &mdash; no obligation &mdash; so you can see the reaction before committing. If they love it, you convert. If not, you still learned something valuable.
+          </p>
+          <ul class="pilot-bullets" role="list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              One full companion built at no cost
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              No platform to learn, no template to fill
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Delivered in 3&ndash;5 business days
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              Response within one business day
+            </li>
+          </ul>
         </div>
-        <p class="cta-section__note">Or email hello@alterra.digital &nbsp;·&nbsp; Response within one business day</p>
+
+        <!-- Right: form card -->
+        <div class="pilot-form-wrap reveal reveal-d2">
+
+          <!-- SUCCESS STATE -->
+          <div id="form-success" class="form-success" style="display:none;" aria-live="polite">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Request received.</h3>
+            <p>We&rsquo;ll be in touch within one business day.</p>
+          </div>
+
+          <!-- FORM -->
+          <form id="pilot-form" class="pilot-form" novalidate aria-label="Pilot build request form">
+            <div class="pilot-form__row">
+              <div class="pilot-form__field">
+                <label for="pf-name">Your Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="pf-name" name="name" placeholder="Jane Smith" required autocomplete="name">
+              </div>
+              <div class="pilot-form__field">
+                <label for="pf-agency">Agency Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="pf-agency" name="agency" placeholder="Wanderlux Advisors" required>
+              </div>
+            </div>
+            <div class="pilot-form__field">
+              <label for="pf-email">Work Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="pf-email" name="email" placeholder="jane@youragency.com" required autocomplete="email">
+            </div>
+            <div class="pilot-form__row">
+              <div class="pilot-form__field">
+                <label for="pf-trips">Trips per year</label>
+                <select id="pf-trips" name="trips_per_year">
+                  <option value="">Select range</option>
+                  <option value="1-5">1 &ndash; 5</option>
+                  <option value="6-20">6 &ndash; 20</option>
+                  <option value="21-50">21 &ndash; 50</option>
+                  <option value="50+">50+</option>
+                </select>
+              </div>
+              <div class="pilot-form__field">
+                <label for="pf-tier">Tier of interest</label>
+                <select id="pf-tier" name="tier_interest">
+                  <option value="">Not sure yet</option>
+                  <option value="essentials">Essentials ($495)</option>
+                  <option value="premium">Premium ($895)</option>
+                  <option value="premium-plus">Premium Plus (from $1,495)</option>
+                  <option value="agency">Agency Partnership</option>
+                </select>
+              </div>
+            </div>
+            <div class="pilot-form__field">
+              <label for="pf-message">Upcoming trip (optional)</label>
+              <textarea id="pf-message" name="message" rows="3" placeholder="Destinations, dates, or anything helpful about your client&rsquo;s trip."></textarea>
+            </div>
+            <div id="form-error" class="form-error" style="display:none;" role="alert">
+              Something went wrong. Please email <a href="mailto:hello@alterra.digital">hello@alterra.digital</a> directly.
+            </div>
+            <button type="submit" class="btn btn--gold pilot-form__submit" id="form-submit">
+              <span class="form-submit-label">Request My Pilot Build</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="pilot-form__note">Or email <a href="mailto:hello@alterra.digital">hello@alterra.digital</a> directly</p>
+          </form>
+
+        </div>
       </div>
     </div>
   </section>
@@ -714,14 +861,32 @@
        JAVASCRIPT
   ═══════════════════════════════════ -->
   <script>
-  // ── Nav scroll behavior
+  // ── Nav scroll behavior + scroll progress + back-to-top
   const nav = document.getElementById('nav');
-  let lastY = 0;
+  const scrollProgress = document.getElementById('scroll-progress');
+  const backToTop = document.getElementById('back-to-top');
+
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+
+    // Nav
     nav.classList.toggle('nav--scrolled', y > 60);
-    lastY = y;
+
+    // Scroll progress bar
+    if (scrollProgress) {
+      scrollProgress.style.width = (docH > 0 ? (y / docH) * 100 : 0) + '%';
+    }
+
+    // Back to top visibility
+    if (backToTop) {
+      backToTop.classList.toggle('back-to-top--visible', y > 400);
+    }
   }, { passive: true });
+
+  backToTop && backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // ── Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
@@ -782,6 +947,45 @@
       btn.addEventListener('click', function() {
         window.openLightbox(btn.dataset.url);
       });
+    });
+  })();
+
+  // ── Pilot form submission via Formspree
+  // SETUP: Replace this ID with your Formspree form ID from https://formspree.io
+  // After signing up, create a form and paste your endpoint URL below.
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/hello@alterra.digital';
+
+  (function() {
+    const form       = document.getElementById('pilot-form');
+    const success    = document.getElementById('form-success');
+    const errorEl    = document.getElementById('form-error');
+    const submitBtn  = document.getElementById('form-submit');
+    if (!form) return;
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const label = submitBtn.querySelector('.form-submit-label');
+      submitBtn.disabled = true;
+      label.textContent  = 'Sending…';
+      errorEl.style.display = 'none';
+
+      try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display       = 'none';
+          success.style.display    = 'flex';
+        } else {
+          throw new Error('server');
+        }
+      } catch (err) {
+        errorEl.style.display  = 'block';
+        submitBtn.disabled     = false;
+        label.textContent      = 'Request My Pilot Build';
+      }
     });
   })();
   </script>
