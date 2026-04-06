@@ -900,12 +900,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   flex-direction: column;
 }
 .tier:last-child { border-right: none; }
-.tier--feat {
-  background: var(--white);
-}
-.tier--feat .tier__badge { background: var(--gold); color: var(--navy); }
-.tier--feat .tier__cta--gold { background: var(--navy); color: var(--white); }
-.tier--feat .tier__cta--gold:hover { background: var(--navy-2); }
+/* tier--feat: no special styling, identical to other tiers */
 .tier__badge {
   position: absolute;
   top: 0; left: 50%;
