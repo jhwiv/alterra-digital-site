@@ -252,15 +252,16 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   background-image: url('assets/hero-bg.png');
   background-size: cover;
   background-position: center 40%;
-  opacity: 0.22;
+  opacity: 0.10;
 }
 .hero__overlay {
   position: absolute; inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(10,16,30,0.92) 0%,
-    rgba(14,24,41,0.78) 50%,
-    rgba(10,16,30,0.60) 100%
+    rgba(10,16,30,0.95) 0%,
+    rgba(10,16,30,0.88) 40%,
+    rgba(10,16,30,0.82) 65%,
+    rgba(10,16,30,0.88) 100%
   );
 }
 .hero__inner {
@@ -332,6 +333,8 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 .phone-wrap {
   position: relative;
   width: 270px;
+  /* Subtle dark glow behind phone to suppress bg image bleed */
+  filter: drop-shadow(0 0 60px rgba(10,16,30,0.7));
 }
 .phone-wrap--back {
   position: absolute;
