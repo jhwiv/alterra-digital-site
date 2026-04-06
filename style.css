@@ -1186,7 +1186,9 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 }
 
 @media (max-width: 768px) {
-  /* Feature cards: clamp descriptions so paired cards match height */
+  /* Feature cards: uniform title height + clamped descriptions */
+  .feat { padding: var(--s5); }
+  .feat__title { min-height: 3em; display: flex; align-items: flex-start; }
   .feat__desc {
     display: -webkit-box;
     -webkit-line-clamp: 3;
