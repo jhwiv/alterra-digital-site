@@ -216,9 +216,9 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   background: var(--gold);
   color: var(--navy);
   font-size: var(--xs);
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: none;
   text-decoration: none;
   border-radius: var(--r-full);
   transition: all var(--ease);
