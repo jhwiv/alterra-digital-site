@@ -901,8 +901,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 }
 .tier:last-child { border-right: none; }
 .tier--feat {
-  background: var(--cream-2);
-  border: 2px solid var(--gold);
+  background: var(--white);
 }
 .tier--feat .tier__badge { background: var(--gold); color: var(--navy); }
 .tier--feat .tier__cta--gold { background: var(--navy); color: var(--white); }
@@ -1180,7 +1179,7 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   .features__grid { grid-template-columns: repeat(2, 1fr); gap: var(--s4); }
   .pricing__grid { grid-template-columns: repeat(2, 1fr); border-radius: 0; }
   .tier { border-right: none; border-bottom: 1px solid var(--cream-3); }
-  .tier--feat { border-bottom: 1px solid rgba(201,162,72,0.3); }
+  .tier--feat { border-bottom: 1px solid var(--cream-3); }
 }
 
 @media (max-width: 768px) {
