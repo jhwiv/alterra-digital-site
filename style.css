@@ -571,43 +571,48 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 .features__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--s8);
+  gap: var(--s5);
   background: transparent;
   border: none;
   border-radius: 0;
   overflow: visible;
 }
 .feat {
-  padding: var(--s6) var(--s7);
+  padding: var(--s5) var(--s6);
   background: var(--white);
   border-radius: var(--r-xl);
   box-shadow: var(--sh-sm);
   transition: box-shadow var(--ease), transform var(--ease);
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s4);
 }
-.feat:hover { background: var(--white); box-shadow: var(--sh-md); transform: translateY(-3px); }
+.feat:hover { background: var(--white); box-shadow: var(--sh-md); transform: translateY(-2px); }
 .feat__icon {
-  width: 44px; height: 44px;
+  width: 36px; height: 36px;
   background: var(--gold-bg);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--s5);
   flex-shrink: 0;
+  margin-bottom: 0;
+  margin-top: 1px;
 }
-.feat__icon svg { width: 22px; height: 22px; color: var(--gold); }
+.feat__icon svg { width: 17px; height: 17px; color: var(--gold); }
+.feat__body { flex: 1; min-width: 0; }
 .feat__title {
   font-size: var(--sm);
   font-weight: 600;
   color: var(--navy-2);
-  margin-bottom: var(--s3);
+  margin-bottom: var(--s2);
   letter-spacing: 0.01em;
+  line-height: 1.3;
 }
 .feat__desc {
-  font-size: var(--sm);
+  font-size: 0.78rem;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 /* ── EXAMPLES SECTION ── */
@@ -1207,15 +1212,12 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 }
 
 @media (max-width: 768px) {
-  /* Feature cards: uniform title height + clamped descriptions */
-  .feat { padding: var(--s5); }
-  .feat__title { min-height: 3em; display: flex; align-items: flex-start; }
-  .feat__desc {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+  /* Feature cards: compact horizontal on mobile */
+  .feat { padding: var(--s4) var(--s4); gap: var(--s3); }
+  .feat__icon { width: 32px; height: 32px; }
+  .feat__icon svg { width: 15px; height: 15px; }
+  .feat__title { min-height: 0; display: block; font-size: 0.78rem; }
+  .feat__desc { font-size: 0.72rem; }
   /* ── Hero: kill empty space, full-width CTAs, fix eyebrow ── */
   .hero { min-height: 0; padding-bottom: var(--s12); }
   .hero__inner { grid-template-columns: 1fr; }
@@ -1609,15 +1611,8 @@ section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
   .cred-list { gap: var(--s5); }
 }
 
-/* ── FEAT CARD PADDING INCREASE (3-col breathing room) ── */
-.feat {
-  padding: var(--s8) var(--s8);
-}
-.feat__icon {
-  width: 48px; height: 48px;
-  margin-bottom: var(--s6);
-}
-.feat__icon svg { width: 24px; height: 24px; }
+/* ── FEAT CARD PADDING (breathing room retained) ── */
+/* horizontal layout — no overrides needed */
 
 /* ── PILL HOVER ── */
 .pill:hover {
